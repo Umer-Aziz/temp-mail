@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+background-color: #2D2D34;
+}
+
+::-webkit-scrollbar-thumb {
+background: #DC3545;
+border-radius: 24px;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: #24242C;
+  }
+}
+
+
+.font-boo{
+  font-family: 'Black Ops One', cursive;
+}
+.linkedin-icon:hover {
+  transform: rotate(45deg);
+  color: #DC3545;
+  transition: all 0.3s ease-in-out;
+}
+.github-icon:hover {
+  transform: rotate(360deg);
+  color: #DC3545;
+  transition: all 0.5s ease-in-out;
+}
+
+.link-back:hover {
+ opacity: 0.8;
+}
+
+.btn-delete {
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.btn-delete:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.loader{
+  background-image: url(../public/img/mail-loader.svg);
+  animation: rotate 2s linear infinite; 
+  width: 72px;
+  height: 72px;
+}
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
+
+.rerfesh-btn:hover .refresh-icon{
+  animation: rotate 1s linear infinite; 
+}
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
+
+.heart-icon{
+  animation: heartbeat 1.2s infinite; 
+}
+@keyframes heartbeat{
+  0%{
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50%{
+    transform: scale(1.5);
+    opacity:1;
+  }
+  100%{
+    transform: scale(1);
+    opacity:0.5;
+  }
+}
+
+.temp-mail:hover .mail-logo {
+  transform: rotate(360deg);
+    transition: all 800ms ease-in-out;
+}
+
+.border-dashed {
+  border: 2px dashed;
+  border-image-source: url(../public/img/border-box.svg);
+    border-image-slice: 2;
+    border-image-repeat: round;
+}
+
+.input-box {
+    background: #2D2D34;
+    height: 60px; 
+    width: 100%; 
+    max-width: 360px; 
+    border-radius: 30px;
+}
+.input-email {
+  border: 0 !important;
+  background: transparent;
+  margin: 0;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px!important;
+  font-weight: 400!important;
+  height: 52px;
+}
+
+.input-email::placeholder{
+  color: #fff !important;
+}
+
+.btnCircle {
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  transform: translateX(-8px);
+  border: none;
+}
+.btnCircle:hover{
+  transform: scale(-1.01);
+  transition: all 0.8s ease-in-out;
+}
+
+.btn-box{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 12px;
+  row-gap: 20px;
+}
+
+.custom-btn:hover{
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+ul {
+  list-style-type: none !important;
+  padding: 0px !important;
+}
+
+.dot{
+  background-color: #DC3545 !important;
+  width:8px;
+  height:8px;
+  border-radius: 50%;
+  margin-right:14px;
+}
+.mail-listItem ul > li:nth-child(odd){
+  background-color: #7436421f;
+}
+.mail-item:hover {
+ transform: scaleX(1.03);
+ transition: all 0.3s ease-in-out;
+}
+.emailBody{
+  overflow-y: scroll;
+  max-width: 90vw;
+  overflow-x: hidden;
+}
+
+/* read email  */
+.readBox .user-icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width:768px){
+  .email-info{
+    border-bottom:1px solid #6C757D;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .arrow-forward {
+    transform: rotate(-90deg);
+  }
+  .mail-item:hover .arrow-forward {
+    transform: rotate(90deg);
+    transition: all 500ms ease-in-out;
+  }
+}
+@media screen and (min-width:768px){
+  .btn-box{
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+  }
+}
+@media screen and (min-width:1024px){
+  .btn-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width:1280px){
+  .btn-box{
+    display: flex;
+  }
+}
+@media screen and (max-width:640px){
+  .border-md-bottom{
+    border-bottom: 1px solid #fff;
+  }
+}
