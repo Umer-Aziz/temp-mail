@@ -101,7 +101,7 @@ const GetEmail  = () => {
                 setMailItem(data);
                 setProgress(100);
                 if(!data.message){ 
-                  Toast("Refresh again to get emails");
+                  Toast("Refresh again to receive emails");
                 }
 
             })
