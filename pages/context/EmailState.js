@@ -95,7 +95,7 @@ const EmailSate = (props)=>{
         waitingTime ={500}
         onLoaderFinished={() => setProgress(0)}
       />
-     <EmailContext.Provider value={{Toast , tempmail , setEmail , mailItem , setMailItem , getEmailData  , ReadEmailData}}>
+     <EmailContext.Provider value={{tempmail , setEmail , mailItem , setMailItem , getEmailData  , ReadEmailData}}>
         {props.children}
      </EmailContext.Provider>
      </>

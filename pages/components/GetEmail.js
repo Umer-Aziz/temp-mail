@@ -1,4 +1,5 @@
 import React  from "react";
+import { toast , Zoom  } from 'react-toastify';
 import { IoIosCopy , IoMdRefresh } from "react-icons/io"
 import { MdDeleteSweep , MdEditNote , MdAlternateEmail  } from "react-icons/md";
 import { useContext } from "react";
@@ -7,13 +8,30 @@ const GetEmail  = () => {
     const data = useContext(EmailContext);
     const inputEmail = React.useRef();
  
-    let { Toast , tempmail , setEmail , setMailItem, getEmailData  , ReadEmailData} = data;
+    let {tempmail , setEmail , setMailItem, getEmailData  , ReadEmailData} = data;
     // function copy Email
+
+    const Toast = (text)=>{
+        toast.info(text, {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme:"colored",
+            transition: Zoom  
+            
+            });
+    }
+
     const copyText = ()=>{
         let CopyValue = inputEmail.current.placeholder;
          navigator.clipboard.writeText(CopyValue);
         Toast('📋  Text Copied!');
     }
+
+    
 
     const Delete = ()=>{
     setEmail({});

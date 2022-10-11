@@ -6,7 +6,7 @@ import EmailContext from "../context/emailContext";
 const ReadEmail = () => {
     const data = useContext(EmailContext);
     const [show, setShow] = useState(false);
-    let { Toast, tempmail, mailItem, getEmailData, ReadEmailData } = data;
+    let { mailItem } = data;
 
     return (
         <>
