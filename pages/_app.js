@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+      <title>Temporary mail - secure & fast</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Umer Aziz" />
         <meta name="description" content="Temporary mail - Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address." />
