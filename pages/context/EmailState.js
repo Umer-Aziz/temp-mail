@@ -13,7 +13,6 @@ const EmailSate = (props)=>{
     useEffect(() => {
         getEmailData();
        }, []);
-    // function toast 
 
   const Toast = (text)=>{
     toast.info(text, {
