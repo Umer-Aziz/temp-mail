@@ -6,8 +6,6 @@ import EmailContext from "../context/emailContext";
 const ReadEmail = () => {
     const [show, setShow] = useState(false);
     const items = useContext(EmailContext);
-    let { mailItem } = items;
-
     return (
         <>
             <section className="my-4 my-md-5 col-md-7 mx-auto shadow">
@@ -22,7 +20,7 @@ const ReadEmail = () => {
 
                         {/* No mail info */}
 
-                        { mailItem.length == 0 ? <div className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: "333px" }}>
+                        { items.mailItem.length == 0 ? <div className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: "333px" }}>
 
                             <div className="loader">
                             </div>
@@ -33,7 +31,7 @@ const ReadEmail = () => {
                                 <ul className="d-grid gap-3">
 
                                     {
-                                      mailItem.message ?  <div className="p-2 p-md-5 link-warning"> <Link  href="https://rapidapi.com/calvinloveland335703-0p6BxLYIH8f/api/temp-mail44"><a target="_blank">{mailItem.message}</a></Link> </div> :  mailItem.map((info) => {
+                                      items.mailItem.message ?  <div className="p-2 p-md-5 link-warning"> <Link  href="https://rapidapi.com/calvinloveland335703-0p6BxLYIH8f/api/temp-mail44"><a target="_blank">{items.mailItem.message}</a></Link> </div> :  items.mailItem.map((info) => {
 
                                             {/* for name & email   */}
                                             let originalFrom = info.from;
