@@ -6,6 +6,8 @@ import { toast , Zoom  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar';
 
+const customId = "custom-id-yes";
+
 const GetEmail  = () => {
     const [show, setShow] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -28,8 +30,8 @@ const GetEmail  = () => {
             pauseOnHover: true,
             draggable: true,
             theme:"colored",
-            transition: Zoom  
-            
+            transition: Zoom , 
+            toastId: customId
             });
     }
 
