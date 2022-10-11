@@ -55,10 +55,10 @@ const ReadEmail = () => {
 
                                             return (
 
-                                                <li className="mail-lItem" >
+                                                <li className="mail-lItem" key={info.id}>
 
                                                     {/*Email list Item  */}
-                                                    <div onClick={() => { show == false ? setShow(true) : setShow(false) }} key={info.id} className="shadow p-3 d-flex align-items-center justify-content-between mail-item shadow-sm">
+                                                    <div onClick={() => { show == false ? setShow(true) : setShow(false) }}  className="shadow p-3 d-flex align-items-center justify-content-between mail-item shadow-sm">
                                                         <div className="col-lg-5">
                                                             <div className="d-flex">
                                                                 <div className="dot"></div>
