@@ -4,8 +4,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import EmailContext from "../context/emailContext";
 const ReadEmail = () => {
-    const data = useContext(EmailContext);
     const [show, setShow] = useState(false);
+    const data = useContext(EmailContext);
     let { mailItem } = data;
 
     return (
