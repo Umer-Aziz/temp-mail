@@ -5,8 +5,8 @@ import { MdClose } from "react-icons/md";
 import EmailContext from "../context/emailContext";
 const ReadEmail = () => {
     const [show, setShow] = useState(false);
-    const data = useContext(EmailContext);
-    let { mailItem } = data;
+    const items = useContext(EmailContext);
+    let { mailItem } = items;
 
     return (
         <>
