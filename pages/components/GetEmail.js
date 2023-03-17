@@ -130,7 +130,7 @@ const GetEmail  = () => {
                             <div className="my-3 px-md-2 d-flex justify-content-between align-items-center input-box row">
                                 <input readOnly className='col-10 input-email text-light text-center' placeholder={tempmail.email ? tempmail.email : `Generate Your Email! `} ref={inputEmail}/>
                                 <div className="col-2">
-                            { !tempmail.email ? <button title="Generate Email" id="btnEmail" onClick={getEmailData} className="rounded-circle bg-danger btnCircle" type="button">
+                            { !tempmail.email ? <button title="Generate Email" id="btnEmail" onClick={getEmailData} className="rounded-circle bg-danger btnCircle text-white" type="button">
                                 <MdAlternateEmail className="fs-3" />
                                     </button>:
                                     <button title="Copy"  id="btnCopy" onClick={copyText} className="rounded-circle bg-danger btnCircle text-white" type="button">
