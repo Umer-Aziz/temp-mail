@@ -172,7 +172,7 @@ const GetEmail  = () => {
 
             <section className="my-4 my-md-5 col-md-7 mx-auto shadow">
                 <div className="">
-                    <div className="bg-danger p-3 d-flex justify-content-between align-items-center rounded-top font-boo">
+                    <div className="bg-danger p-3 d-flex justify-content-between align-items-center rounded-top font-boo text-white">
                         <p className="fs-6 d-none d-lg-block mb-0">Sender</p>
                         <p className="fs-6 d-none d-lg-block mb-0">Subject</p>
                         <p className="fs-6 d-none d-lg-block mb-0">View</p>
