@@ -133,7 +133,7 @@ const GetEmail  = () => {
                             { !tempmail.email ? <button title="Generate Email" id="btnEmail" onClick={getEmailData} className="rounded-circle bg-danger btnCircle" type="button">
                                 <MdAlternateEmail className="fs-3" />
                                     </button>:
-                                    <button title="Copy"  id="btnCopy" onClick={copyText} className="rounded-circle bg-danger btnCircle" type="button">
+                                    <button title="Copy"  id="btnCopy" onClick={copyText} className="rounded-circle bg-danger btnCircle text-white" type="button">
                                 <IoIosCopy className="fs-3" /> 
                                     </button>}
                                 </div>
